@@ -83,6 +83,7 @@ head(sort(table(sales$custname), decreasing=T))
 head(sort(table(sales$custname), decreasing=T), n=10)
 tail(sort(table(sales$custname), decreasing=T), n=10)
 tail(sort(table(sales$custname), decreasing=T), n=10)
+
 #xtab
 #
 head(sort(xtabs(~ custname, sales), decreasing=T))
