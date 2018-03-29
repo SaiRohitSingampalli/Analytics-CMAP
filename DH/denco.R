@@ -42,6 +42,7 @@ list1= tapply(sales$revenue, sales$custname, FUN=sum)
 head(list1)
 list1
 head(sort(list1, decreasing=T))
+
 summary(df3)
 str(df3)
 
