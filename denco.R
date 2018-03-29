@@ -78,14 +78,18 @@ head(df5)
 
 # Freqency --------
 names(sales)
+table(sales$custname)
 head(sort(table(sales$custname), decreasing=T))
-
+head(sort(table(sales$custname), decreasing=T), n=10)
+tail(sort(table(sales$custname), decreasing=T), n=10)
+tail(sort(table(sales$custname), decreasing=T), n=10)
 #xtab
 #
 head(sort(xtabs(~ custname, sales), decreasing=T))
 #
 #
 library(dplyr)
+
 sales %>% dplyr::count(custname, sort=TRUE)
 
 sales %>% dplyr::group_by(custname) %>% dplyr::summarise(n = n()) %>% dplyr::arrange(desc(n))
