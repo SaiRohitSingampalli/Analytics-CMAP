@@ -123,6 +123,7 @@ apply(myarray, 1, sum)
 df
 ?apply
 
+
 df
 tapply(df$marks, df$course, sum)
 tapply(df$marks, df$gender, mean)
