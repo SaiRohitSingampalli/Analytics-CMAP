@@ -1,0 +1,2 @@
+install.packages("CHAID",repos="http://R-Forge.R-project.org")
+library(CHAID)
